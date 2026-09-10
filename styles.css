@@ -62,3 +62,18 @@
 @media(max-width:560px){.page-main{padding-bottom:55px}.page-hero{padding-block:45px 38px}.page-title{font-size:46px;letter-spacing:-2.4px}.page-lede{font-size:17px}.page-section{padding-top:42px}.product-shots{grid-template-columns:1fr;gap:28px}.product-shots figure{max-width:300px}.status-panel{display:block;padding:25px}.status-panel .status{display:inline-block;margin-top:18px}.policy-section h2{font-size:22px}}
 
 :root{--blue:#d4eaf0;--yellow:#f3e3cc;--pink:#e4dcee}.page-title{font-weight:500}.info-card{border-radius:6px}.policy-nav,.contact-card,.status-panel{border-radius:6px}.feature-number{font-size:.75rem;letter-spacing:1px}.policy-content .text-link{overflow-wrap:anywhere;display:inline}.page-section p{font-size:1rem}
+
+/* The supplied brand artwork leads the page; the standalone slogan is secondary. */
+.header .brand-image{display:block;width:360px;flex:0 0 auto;line-height:0;letter-spacing:normal}
+.header .brand-image svg{display:block;width:100%;height:auto}
+.header{padding-block:12px;align-items:center}
+body:not(.subpage) .header .brand-image{width:420px}
+.hero{padding-top:12px}
+.hero-title{padding-block:24px 36px}
+.hero h1{font-size:clamp(3rem,6.5vw,6rem);line-height:1;letter-spacing:-.05em}
+.hero h1>span{display:inline}
+.hero h1 .next-line{padding-left:0}
+.hero-description{top:20px}
+@media(max-width:1050px){body:not(.subpage) .header .brand-image{width:360px}.header nav{gap:22px}.hero h1{font-size:6.5vw}}
+@media(max-width:740px){.header{gap:10px}.header .brand-image,body:not(.subpage) .header .brand-image{width:300px;max-width:100%}.header nav{width:100%;justify-content:space-between}.hero h1{font-size:clamp(2.5rem,7.6vw,3.8rem)}.hero-title{padding-block:20px 28px}}
+@media(max-width:440px){.header .brand-image,body:not(.subpage) .header .brand-image{width:285px}.header{padding-top:0}.hero h1{font-size:9vw;letter-spacing:-.045em}.hero-title{padding-block:16px 24px}}
